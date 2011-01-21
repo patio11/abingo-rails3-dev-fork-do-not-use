@@ -1,5 +1,12 @@
 Copyright (c) 2009 Patrick McKenzie
 
+Copyright (c) 2011 Andy Atkinson **
+
+** Code was forked from the original version of A/Bingo with permission by the original author. 
+Commits at 8bc76 and later made by Andy Atkinson are copyright of the author. Changes from the original
+repo may be integrated on this fork, and are copyright of the author. This fork is released under 
+the same MIT License as the original. Please keep this note describing the fork intact.
+
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including
