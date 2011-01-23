@@ -1,7 +1,9 @@
 # provide uninstall instructions to user
 require 'fileutils'
 
-if migration_file = Dir.glob(File.join('db', 'migrate', '**')){|f| f.grep(/_abingo_migration/) }
+migration_file = nil
+Dir.glob(File.join('db', 'migrate', '**')){|f| migration_file = f.grep(/_abingo_migration/) }
+if migration_file
   puts "Abingo migration file #{migration_file} has not been modified. Run the down method manually to reverse the migration."
 end
 
