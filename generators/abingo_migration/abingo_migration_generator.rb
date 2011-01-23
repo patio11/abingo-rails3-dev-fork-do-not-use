@@ -1,5 +1,6 @@
 require 'rails/generators'
 require 'rails/generators/active_record'
+
 class AbingoMigrationGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 
