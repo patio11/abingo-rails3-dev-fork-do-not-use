@@ -15,11 +15,7 @@ class AbingoMigrationGenerator < Rails::Generators::Base
     end
   end
 
-  def version
-    Abingo.MAJOR_VERSION.gsub(".", "")
-  end
-
   def copy_migration
-    migration_template 'abingo_migration.rb', "db/migrate/abingo_migration#{version}"
+    migration_template 'abingo_migration.rb', "db/migrate/abingo_migration"
   end
 end
