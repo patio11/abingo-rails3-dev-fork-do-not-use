@@ -1,6 +1,6 @@
 require 'rails/generators'
 
-class AbingoStylesheetGenerator < Rails::Generators::Base
+class AbingoDashboardStylesheetGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
 
   def copy_stylesheet

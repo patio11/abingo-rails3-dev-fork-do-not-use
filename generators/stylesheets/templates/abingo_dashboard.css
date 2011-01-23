@@ -1,6 +1,13 @@
+body.abingo {
+  background-color:#ddd;
+  font-size:62.5%;
+}
+body.abingo h1, body.abingo h2, body.abingo p, body.abingo a {color:#222;}
+body.abingo h1 {font-size:2em;}
+body.abingo p {font-size:1.2em;}
 #abingo_dashboard {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 62.5%;
+  font-size: 1em;
   padding: 20px 40px;
 }
 #abingo_dashboard h1 {
