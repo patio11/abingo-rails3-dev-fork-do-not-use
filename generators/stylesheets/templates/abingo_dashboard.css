@@ -97,3 +97,17 @@ body.abingo p {font-size:1.2em;}
 #abingo_dashboard .table tr.even {
   background: #f8f8f8;
 }
+#abingo_dashboard #blank {
+  background-color:#fff;
+  padding:30px;
+  -moz-border-radius:20px;
+}
+#abingo_dashboard #blank h1 {
+  font-size:2em;
+  font-style:italic;
+}
+#abingo_dashboard #blank p, #abingo_dashboard #blank code {
+  margin:10px 0;
+  font-size:1.6em;
+  line-height:1.6em;
+}

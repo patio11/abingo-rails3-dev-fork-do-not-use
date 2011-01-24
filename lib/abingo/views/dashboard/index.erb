@@ -1,9 +1,17 @@
 <div id='content'>
   <div id='abingo_dashboard'>
-    <ul>
-      <% @experiments.each do |experiment| %>
-        <li><%= render :partial => 'dashboard/experiment', :locals => {:experiment => experiment} %></li>
-      <% end %>
-    </ul>
+    <% if @experiments.blank? %>
+      <div id='blank'>
+        <h1>Oops, you don't have any experiments!</h1>
+        <p>Try creating an experiment by replacing some header text in your app with the snippet below. Then navigate back to the dashboard and you should see your experiment and conversions.</p>
+        <code><%%= ab_test "heading-text", ["Sign up today!", "Free signup!"] %></code>
+      </div>
+    <% else %>
+      <ul>
+        <% @experiments.each do |experiment| %>
+          <li><%= render :partial => 'dashboard/experiment', :locals => {:experiment => experiment} %></li>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </div>
